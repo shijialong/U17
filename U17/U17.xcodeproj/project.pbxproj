@@ -13,6 +13,11 @@
 		1F54E6E1201836DD004E5EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F54E6DA201836DD004E5EDE /* Assets.xcassets */; };
 		1F54E6E2201836DD004E5EDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F54E6DD201836DD004E5EDE /* LaunchScreen.storyboard */; };
 		1F54E6E3201836DD004E5EDE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F54E6DF201836DD004E5EDE /* Info.plist */; };
+		1F54E72D2018586E004E5EDE /* UTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F54E72C2018586E004E5EDE /* UTabBarController.swift */; };
+		1F54E733201859DC004E5EDE /* UBookshelfVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F54E732201859DC004E5EDE /* UBookshelfVC.swift */; };
+		1F54E73720185A10004E5EDE /* UHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F54E73620185A10004E5EDE /* UHomeVC.swift */; };
+		1F54E73920185A21004E5EDE /* UMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F54E73820185A21004E5EDE /* UMineVC.swift */; };
+		1F54E73D20185D5B004E5EDE /* UCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F54E73C20185D5B004E5EDE /* UCategoryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		1F54E6DA201836DD004E5EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F54E6DE201836DD004E5EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F54E6DF201836DD004E5EDE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F54E72C2018586E004E5EDE /* UTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTabBarController.swift; sourceTree = "<group>"; };
+		1F54E732201859DC004E5EDE /* UBookshelfVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBookshelfVC.swift; sourceTree = "<group>"; };
+		1F54E73620185A10004E5EDE /* UHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UHomeVC.swift; sourceTree = "<group>"; };
+		1F54E73820185A21004E5EDE /* UMineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMineVC.swift; sourceTree = "<group>"; };
+		1F54E73C20185D5B004E5EDE /* UCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCategoryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +150,7 @@
 		1F54E6DB201836DD004E5EDE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1F54E72B20185814004E5EDE /* Base */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -156,8 +167,52 @@
 		1F54E6E0201836DD004E5EDE /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				1F54E72F201859B9004E5EDE /* Home */,
+				1F54E730201859B9004E5EDE /* Category */,
+				1F54E72E201859B8004E5EDE /* Bookshelf */,
+				1F54E731201859B9004E5EDE /* Mine */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		1F54E72B20185814004E5EDE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1F54E72C2018586E004E5EDE /* UTabBarController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1F54E72E201859B8004E5EDE /* Bookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				1F54E732201859DC004E5EDE /* UBookshelfVC.swift */,
+			);
+			path = Bookshelf;
+			sourceTree = "<group>";
+		};
+		1F54E72F201859B9004E5EDE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1F54E73620185A10004E5EDE /* UHomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1F54E730201859B9004E5EDE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1F54E73C20185D5B004E5EDE /* UCategoryVC.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1F54E731201859B9004E5EDE /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				1F54E73820185A21004E5EDE /* UMineVC.swift */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +349,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F54E73D20185D5B004E5EDE /* UCategoryVC.swift in Sources */,
+				1F54E73720185A10004E5EDE /* UHomeVC.swift in Sources */,
 				1F54E6D820183627004E5EDE /* AppDelegate.swift in Sources */,
+				1F54E73920185A21004E5EDE /* UMineVC.swift in Sources */,
+				1F54E72D2018586E004E5EDE /* UTabBarController.swift in Sources */,
+				1F54E733201859DC004E5EDE /* UBookshelfVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = U17/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/U17/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shijialong.U17;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,7 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = U17/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/U17/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shijialong.U17;
 				PRODUCT_NAME = "$(TARGET_NAME)";
